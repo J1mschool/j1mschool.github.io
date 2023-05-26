@@ -31,7 +31,6 @@ height: 100vh;
 /*   CSS for Metronome Components  */
 
 .metronome{
-border: 1px solid #6b9f00;
 display: flex;
 flex-direction: column;
 width: 300px;
