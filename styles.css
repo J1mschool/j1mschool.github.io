@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Music&family=Outfit&display=swap');
 
 * {
 
@@ -15,7 +16,7 @@
 }
 
 body{
-    font-family: 'Outfit', ' sansserif';
+    font-family: 'Outfit', 'sansserif';
     color: #525252
 }
 
@@ -25,16 +26,18 @@ display:flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
+flex-direction: column;
 
 }
 
 /*   CSS for Metronome Components  */
 
 .metronome{
+border: 1px solid #6b9f00;
 display: flex;
 flex-direction: column;
 width: 300px;
-height: 250px;
+height: 150px;
 
 }
 
@@ -90,9 +93,6 @@ input[type=range]::-webkit-slider-runnable-track{
 
 }
 
-
-
-
 .tempo-settings .tempo-btn{
     width: 30px;
     height: 30px;
@@ -119,3 +119,51 @@ input[type=range]::-webkit-slider-runnable-track{
 .tempo-settings .decrease-tempo{
     line-height: 25px;
        }
+
+.metre-settings{
+    margin-top: 15px;
+    justify-content: centre;
+    border: 1px solid #6b9f00;
+    display: flex;
+    flex-direction: row;
+    width:120px;
+    height: 50;
+    text-align: center;
+    line-height: 30px;
+    }
+
+
+.metre-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background:#fff;
+    text-align: center; 
+    justify-items: center;
+    font-weight: bold;
+    margin-right: 2%;
+    margin-left: 2%;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.metre-settings .metre-btn:hover{
+    background:#e77b7b ;
+    color: #fff;
+   }
+
+.time-signature{
+margin-left: 5px;
+margin-right: 5px;
+
+font-family: 'Noto' , 'sansserif';
+font-size: 1.4em;
+font-weight: bold;
+font-style: italic;
+}
+
+
+
+
